@@ -169,6 +169,84 @@
                 font-weight: 700;
                 line-height: normal;
             }
+
+            .app-bar {
+                position: absolute;
+                flex-shrink: 0;
+                color: #3e3e3e;
+                width: 225px;
+                height: 35px;
+                display: flex;
+            }
+
+            .files {
+               position: absolute;
+               width: 46px;
+               height: 35px;
+               left: 0px;
+               top: 0px;
+               background: #0094FF;
+            }
+
+            .files-icon {
+              position: absolute;
+              left: 10px;
+              top: 8px;
+              width: 26px;
+              height: 21px;
+              background: url("files-icon.svg");
+              cursor: pointer;
+            }
+
+            .cloud-icon {
+              position: absolute;
+              left: 3.5rem;
+              top: 8px;
+              width: 29px;
+              height: 21px;
+              background: url("cloud-icon.svg");
+              cursor: pointer;
+            }
+
+            .git-icon {
+              position: absolute;
+              left: 6rem;
+              top: 8px;
+              width: 22px;
+              height: 21px;
+              background: url("git_icon.svg");
+              cursor: pointer;
+            }
+
+            .settings-icon {
+              position: absolute;
+              left: 8rem;
+              top: 8px;
+              width: 22px;
+              height: 21px;
+              background: url("settings.svg");
+              cursor: pointer;
+            }
+
+            .messages-icon {
+              position: absolute;
+              left: 10rem;
+              top: 8px;
+              width: 22px;
+              height: 21px;
+              background: url("messages.svg");
+              cursor: pointer;
+            }
+
+            .addapps-icon {
+              position: absolute;
+              left: 12rem;
+              top: 8px;
+              width: 21px;
+              height: 21px;
+              background: url("addapp.svg");
+              cursor: pointer;
+            }
         </style>
     </head>
     <body>
@@ -192,6 +270,20 @@
 
         <!--Code for the Sidebar(left)-->
         <div class="sidebar-left">
+                <div class="app-bar">
+            <div class="files"><div class="files-icon">
+            </div>
+            <div class="cloud-icon">
+            </div>
+            <div class="git-icon">
+            </div>
+            <div class="settings-icon">
+            </div>
+            <div class="messages-icon">
+            </div>
+            <div class="addapps-icon">
+            </div>
+          </div>
             <div class="project-explorer">Files</div>
         </div>
     </body>
