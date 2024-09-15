@@ -5,8 +5,10 @@
         
         <style>
             @font-face {
-                font-family: 'SF Pro';
-                src: url("SF-Pro-Text-Bold.otf") format(openType);
+                font-family: 'SF Pro', 'JetBrains Mono';
+                src: 
+                url("SF-Pro-Text-Bold.otf") format(openType),
+                url("JetBrainsMono-Bold.ttf");
             }
 
             body {
@@ -466,6 +468,42 @@ font-size: 16px;
 line-height: 19px;
 color: #FFFFFF;
             }
+
+            .line-numbers {
+position: absolute;
+width: 34px;
+height: 740px;
+top: 4rem;
+left: 15rem;
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 36px;
+text-align: center;
+color: #FFFFFF;
+            }
+
+            .CodeMirror {
+             width: 670px;
+             height: 603px !important;
+             bottom: 37.2rem;
+             left: 15rem;
+             border-radius: 10px;
+             background-color:#454545 !important;
+             color: white !important;
+             font-family: "JetBrains Mono" !important;
+            }
+
+            .CodeMirror-gutters {
+                color: #454545 !important;
+            }
+
+            .CodeMirror-linenumber {
+                background-color: #454545;
+                border-radius: 10px;
+                width: 2px !important;
+            }
         </style>
     </head>
     <body>
@@ -544,5 +582,18 @@ color: #FFFFFF;
                   <div class="install-text">Install JVM 22</div>
             </div>
         </div>
+
+        <!--Code Editor-->
+    <textarea class="code-editor" id="code-editor"></textarea>
     </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+<script>
+var editor = CodeMirror.fromTextArea(document.getElementById("code-editor"), {
+    lineNumbers: true,
+    mode: "javascript",
+    theme: "defualt"
+});
+</script>
 </html>
