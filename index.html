@@ -379,6 +379,93 @@ font-size: 13px;
 line-height: 16px;
 color: #FFFFFF;
             }
+
+            .previewpanel {
+                position: relative;
+                width: 225px;
+                height: 605px;
+                flex-shrink: 0;
+                background: #454545;
+                border-radius: 10px;
+                display: column;
+                top: 0.6rem;
+                left: 58rem;
+            }
+
+            .previewshade {
+position: absolute;
+width: 49px;
+height: 41px;
+top: 0.5rem;
+left: 0.5rem;
+background: #017AFF;
+border-radius: 5px;
+            }
+
+            .preview-icon {
+position: absolute;
+width: 39px;
+height: 25px;
+top: 0.5rem;
+left: 0.3rem;
+background: url("eye.svg");
+            }
+
+            .modify-icon {
+position: absolute;
+top: 1rem;
+left: 5rem;
+width: 31px;
+height: 25px;
+background: url("modifytocode-icon.svg")
+            }
+
+            .close {
+position: absolute;
+width: 25px;
+height: 25px;
+background: url("close.svg");
+top: 1rem;
+left: 11rem;
+            }
+
+            .preview-note {
+position: absolute;
+width: 200px;
+height: 318px;
+top: 9rem;
+left: 1rem;
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+            }
+
+            .install-jvm {
+position: absolute;
+width: 155px;
+height: 33px;
+top: 21rem;
+left: 2rem;
+background: #0094FF;
+border-radius: 16.5px;
+            }
+
+            .install-text {
+position: absolute;
+width: 120px;
+height: 21px;
+top: 0.5rem;
+left: 1.3rem;
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+            }
         </style>
     </head>
     <body>
@@ -440,6 +527,22 @@ color: #FFFFFF;
                         <div class="createnew">Create new File/Folder</div>
                     </div>
                 </div>
+        </div>
+
+        <!--Preview Panel-->
+        <div class="previewpanel">
+            <div class="previewshade">
+               <div class="preview-icon">
+               </div>
+            </div>
+            <div class="modify-icon">
+            </div>
+            <div class="close">
+            </div>
+            <div class="preview-note">Nothing to preview yet. If your using the exUI framework, make sure to download the latest JVM on your computer or Dayfont Cloud.</div>
+            <div class="install-jvm">
+                  <div class="install-text">Install JVM 22</div>
+            </div>
         </div>
     </body>
 </html>
